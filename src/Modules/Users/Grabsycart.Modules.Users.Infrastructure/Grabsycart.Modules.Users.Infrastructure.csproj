@@ -1,9 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-    </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Common\Grabsycart.Common.Core\Grabsycart.Common.Core.csproj" />
+    <ProjectReference Include="..\..\..\Common\Grabsycart.Common.Infrastructure\Grabsycart.Common.Infrastructure.csproj" />
+    <ProjectReference Include="..\Grabsycart.Modules.Users.Core\Grabsycart.Modules.Users.Core.csproj" />
+  </ItemGroup>
 </Project>

@@ -2,7 +2,7 @@
 
 namespace Grabsycart.Modules.Users.Core.Models;
 
-public class User : IdentityUser<Guid>
+public class Role : IdentityRole<Guid>
 {
-    public required string Email { get; set; }
+    
 }
